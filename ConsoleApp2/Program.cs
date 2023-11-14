@@ -18,17 +18,23 @@ namespace ConsoleApp2
 
             //                            Begin7
 
-            Console.WriteLine("Введите радиус окружности: ");
-            string tmp = Console.ReadLine();
-            int R = Int32.Parse(tmp);
-            int p = (int)3.14;
-            int L = 2 * p * R;
-            int S = p * (R * R);
-            Console.WriteLine("Длина окружности = " + L);
-            Console.WriteLine("Площадь круга = " + S);
+            //Console.WriteLine("Введите радиус окружности: ");
+            //string tmp = Console.ReadLine();
+            //int R = Int32.Parse(tmp);
+            //int p = (int)3.14;
+            //int L = 2 * p * R;
+            //int S = p * (R * R);
+            //Console.WriteLine("Длина окружности = " + L);
+            //Console.WriteLine("Площадь круга = " + S);
 
-
-
+            //                              Begin9
+            Console.WriteLine("Введите два числа: ");
+            string tmp=Console.ReadLine();
+            int a = Int32.Parse(tmp);
+            string tm = Console.ReadLine();
+            int b = Int32.Parse(tm);
+            double c = Math.Sqrt(a * b);
+            Console.WriteLine("Среднее геометрическое чисел = " + c);
         }
 }
 }
