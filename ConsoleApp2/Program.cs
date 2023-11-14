@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace ConsoleApp2
 { 
@@ -67,28 +68,43 @@ namespace ConsoleApp2
             //}
 
             //                 IF4
-            Console.WriteLine("Введите три числа: ");
+            //Console.WriteLine("Введите три числа: ");
+            //string t = Console.ReadLine();
+            //int a=Int32.Parse(t);
+            //string tt= Console.ReadLine();
+            //int b=Int32.Parse(tt);
+            //string ttt=Console.ReadLine();
+            //int c=Int32.Parse(ttt);
+            //int d = 0;
+
+            //if (a >= 0)
+            //{
+            //    d = d + 1;
+            //}
+            //if (b >= 0)
+            //{
+            //    d = d + 1;
+            //}
+            //if (c >= 0) 
+            //{
+            //    d = d + 1;
+            //}
+            //Console.WriteLine("Положительных чисел: "+d);
+
+            //              If7
+            Console.WriteLine("Введите два числа");
             string t = Console.ReadLine();
             int a=Int32.Parse(t);
-            string tt= Console.ReadLine();
+            string tt=Console.ReadLine();
             int b=Int32.Parse(tt);
-            string ttt=Console.ReadLine();
-            int c=Int32.Parse(ttt);
-            int d = 0;
-            
-            if (a >= 0)
+            if (a<b)
             {
-                d = d + 1;
+                Console.WriteLine("Порядковый номер меньшего числа: 1");
             }
-            if (b >= 0)
+            else
             {
-                d = d + 1;
+                Console.WriteLine("Порядковый номер меньшего числа: 2");
             }
-            if (c >= 0) 
-            {
-                d = d + 1;
-            }
-            Console.WriteLine("Положительных чисел: "+d);
         }
 }
 }
