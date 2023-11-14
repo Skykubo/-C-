@@ -52,20 +52,43 @@ namespace ConsoleApp2
             //Console.WriteLine("Частное квадратов = " + quo);
 
             //                  IF2
-            Console.WriteLine("Введите число: ");
-            string tmp=Console.ReadLine();
-            int a=Int32.Parse(tmp);
+            //Console.WriteLine("Введите число: ");
+            //string tmp=Console.ReadLine();
+            //int a=Int32.Parse(tmp);
+            //if (a >= 0)
+            //{
+            //    int b = a + 1;
+            //    Console.WriteLine(+b);
+            //}
+            //else
+            //{
+            //    int b = a - 2; 
+            //    Console.WriteLine(+b);
+            //}
+
+            //                 IF4
+            Console.WriteLine("Введите три числа: ");
+            string t = Console.ReadLine();
+            int a=Int32.Parse(t);
+            string tt= Console.ReadLine();
+            int b=Int32.Parse(tt);
+            string ttt=Console.ReadLine();
+            int c=Int32.Parse(ttt);
+            int d = 0;
+            
             if (a >= 0)
             {
-                int b = a + 1;
-                Console.WriteLine(+b);
+                d = d + 1;
             }
-            else
+            if (b >= 0)
             {
-                int b = a - 2; 
-                Console.WriteLine(+b);
+                d = d + 1;
             }
-            
+            if (c >= 0) 
+            {
+                d = d + 1;
+            }
+            Console.WriteLine("Положительных чисел: "+d);
         }
 }
 }
