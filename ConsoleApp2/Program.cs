@@ -92,19 +92,35 @@ namespace ConsoleApp2
             //Console.WriteLine("Положительных чисел: "+d);
 
             //              If7
-            Console.WriteLine("Введите два числа");
-            string t = Console.ReadLine();
-            int a=Int32.Parse(t);
-            string tt=Console.ReadLine();
-            int b=Int32.Parse(tt);
-            if (a<b)
+            //Console.WriteLine("Введите два числа");
+            //string t = Console.ReadLine();
+            //int a=Int32.Parse(t);
+            //string tt=Console.ReadLine();
+            //int b=Int32.Parse(tt);
+            //if (a<b)
+            //{
+            //    Console.WriteLine("Порядковый номер меньшего числа: 1");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Порядковый номер меньшего числа: 2");
+            //}
+
+            //                 IF9
+            Console.WriteLine("Введите две переменные вещественного типа: ");
+            string t=Console.ReadLine();    
+            float A=int.Parse(t);
+            string tt=Console.ReadLine(); 
+            float B=int.Parse(tt);
+            if (A<B)
             {
-                Console.WriteLine("Порядковый номер меньшего числа: 1");
+                (A, B) = (B, A);
+              
+                
             }
-            else
-            {
-                Console.WriteLine("Порядковый номер меньшего числа: 2");
-            }
+          
+            Console.WriteLine("Значение A: " + A);
+            Console.WriteLine("Значение B: " + B);
         }
 }
 }
