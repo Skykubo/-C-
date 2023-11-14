@@ -109,14 +109,12 @@ namespace ConsoleApp2
             //                 IF9
             Console.WriteLine("Введите две переменные вещественного типа: ");
             string t=Console.ReadLine();    
-            float A=int.Parse(t);
+            double A=Convert.ToDouble(t);
             string tt=Console.ReadLine(); 
-            float B=int.Parse(tt);
-            if (A<B)
+            double B= Convert.ToDouble(tt);
+            if (A>B)
             {
-                (A, B) = (B, A);
-              
-                
+                (A, B) = (B, A);            
             }
           
             Console.WriteLine("Значение A: " + A);
