@@ -126,6 +126,25 @@ namespace ConsoleApp2
             Console.WriteLine("Значение A: " + A);
             Console.WriteLine("Значение B: " + B);
         }
+        static void Expr1()
+        {        
+          
+            int a = 5;
+            int b = 2;
+            Console.WriteLine("До замены:");
+            Console.WriteLine("Переменная a = " + a);
+            Console.WriteLine("Переменная b = " + b);
+            (a, b) = (b, a);
+            Console.WriteLine("После замены:");
+            Console.WriteLine("Переменная a = " + a);
+            Console.WriteLine("Переменная b = " + b);
+
+
+
+        }
+
+
+
 
         static void Main(string[] args)
         {
@@ -136,7 +155,8 @@ namespace ConsoleApp2
             //IF2();
             //IF4();
             //IF7();
-            IF9();
+            //IF9();
+            Expr1();
         }    
 }
 }
