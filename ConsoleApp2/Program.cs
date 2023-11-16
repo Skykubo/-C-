@@ -138,13 +138,21 @@ namespace ConsoleApp2
             Console.WriteLine("После замены:");
             Console.WriteLine("Переменная a = " + a);
             Console.WriteLine("Переменная b = " + b);
-
-
-
         }
 
+        static void Expr2()
+        {
+        int a=123;
+            string b="";
+            Console.WriteLine(a);
 
-
+            while (a > 0)
+            {
+                b = Convert.ToString(b + a % 10);
+                a = a / 10;
+            }
+            Console.WriteLine(b);
+        }
 
         static void Main(string[] args)
         {
@@ -156,7 +164,8 @@ namespace ConsoleApp2
             //IF4();
             //IF7();
             //IF9();
-            Expr1();
+            //Expr1();
+            Expr2();
         }    
 }
 }
