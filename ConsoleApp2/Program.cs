@@ -154,6 +154,27 @@ namespace ConsoleApp2
             Console.WriteLine(b);
         }
 
+        static void Expr3()
+        {
+            Console.WriteLine("Введите время в часах: ");
+            string t = Console.ReadLine();
+            int H = Int32.Parse(t);
+            if (H < 7)
+                H = H * 30;
+            else if (H < 13)
+                H = 360 - H * 30;
+            else if (H < 19)
+                H = H % 12 * 30;
+            else if (H < 24)
+                H = 360 - H % 12 * 30;
+            else if (H < 25)
+                H = 0;
+            
+            Console.WriteLine("Угол между часовой и минутной стрелкой = " + H);
+        }
+
+
+
         static void Main(string[] args)
         {
             //Begin5();
@@ -165,7 +186,8 @@ namespace ConsoleApp2
             //IF7();
             //IF9();
             //Expr1();
-            Expr2();
+            //Expr2();
+            Expr3();
         }    
 }
 }
